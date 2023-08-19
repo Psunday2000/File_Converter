@@ -1,6 +1,8 @@
 # Word to PDF & PDF to Word Converter
 
-This is a simple Python and Kivy-based application that allows you to convert between Word (.docx) and PDF (.pdf) files. The application provides a user-friendly interface for selecting files and performing conversions.
+![App Logo](convert.png)
+
+This is a simple Python and KivyMD-based application that allows you to convert between Word (.docx) and PDF (.pdf) files. The application provides a user-friendly interface for selecting files and performing conversions, and features a modern Material Design look.
 
 ## Features
 
@@ -12,14 +14,14 @@ This is a simple Python and Kivy-based application that allows you to convert be
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/psunday2000/file_converter.git
+   git clone https://github.com/your-username/file_converter.git
    cd file_converter
    ```
 
 2. Install the required dependencies using pip:
 
    ```bash
-   pip install kivy PyMuPDF reportlab python-docx PyPDF2
+   pip install kivy kivymd
    ```
 
 ## Usage
@@ -30,9 +32,9 @@ This is a simple Python and Kivy-based application that allows you to convert be
    python main.py
    ```
 
-2. The application will open, showing a file selection interface.
+2. The application will open, showing a Material Design interface.
 
-3. Choose a Word (.docx) or PDF (.pdf) file to convert.
+3. Click the "Select File" button to choose a Word (.docx) or PDF (.pdf) file for conversion.
 
 4. Depending on the selected file type, the conversion button will change accordingly:
 
@@ -49,4 +51,6 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 
 This project is licensed under the [MIT License](LICENSE).
 
----
+```
+
+```

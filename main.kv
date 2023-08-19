@@ -1,0 +1,50 @@
+BoxLayout:
+    orientation: 'vertical'
+    spacing: dp(10)
+    padding: dp(10)
+    pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+
+    canvas:
+        Color:
+            rgba: 1, 1, 1, 1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    
+    Image:
+        source: "convert.png"
+        allow_stretch:
+        size_hint_y: None
+        height: dp(100)
+    
+    MDLabel:
+        text: 'FILE CONVERTER'
+        theme_text_color: 'Primary'
+        halign: 'center'
+        font_name: 'Montserrat'
+        font_size: '24sp'
+         
+    MDBoxLayout:
+        orientation: 'vertical'
+        spacing: '10dp'
+        padding: ('10dp', '10dp', '10dp', '10dp')
+        size_hint: 0.3, 0.3
+        pos_hint: {'center_x': 0.5,'center_y': 0.5}
+
+        MDRaisedButton:
+            id: select_button
+            text: 'Select File'
+            on_release: app.file_manager_open()
+            font_name: 'Montserrat'
+                    
+        MDRaisedButton:
+            id: convert_button
+            text: 'Convert'
+            on_release: app.convert_file()
+            font_name: 'Montserrat'
+
+    MDLabel:
+        id: message_label
+        font_name: 'Montserrat'
+        text: ''
+        halign: 'center'
